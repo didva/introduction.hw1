@@ -18,5 +18,6 @@ class Task10Specification extends Specification {
         1       || false
         29914   || true
         5555555 || false
+        -12345  || true
     }
 }

@@ -13,4 +13,5 @@ public class Task5 {
         double divisor = 3 + zSquare / 5;
         return 1 + zSquare / divisor;
     }
+
 }

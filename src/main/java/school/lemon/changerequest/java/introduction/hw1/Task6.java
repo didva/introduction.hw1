@@ -3,18 +3,13 @@ package school.lemon.changerequest.java.introduction.hw1;
 public class Task6 {
 
     public static double calculateS(double x) {
-        double result = 1, xPow = x;
-        for (int i = 1; i < 5; ++i, xPow *= x) {
-            result += xPow / factorial(i);
+        double result = 1, dividend = 1, divisor = 1;
+        for (double i = 1; i < 5; ++i) {
+            dividend *= x;
+            divisor *= i;
+            result += dividend / divisor;
         }
         return result;
-    }
-
-    private static int factorial(int value) {
-        for (int i = value - 1; i > 1; --i) {
-            value *= i;
-        }
-        return value;
     }
 
     public static double calculateZ(double x, double y) {
